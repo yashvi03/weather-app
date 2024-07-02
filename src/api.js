@@ -1,9 +1,9 @@
 const current =
   "https://api.weatherapi.com/v1/current.json?key=1264af36d4f441d0b7e114002242006&q=";
 const forecast =
-  "http://api.weatherapi.com/v1/forecast.json?key=1264af36d4f441d0b7e114002242006&days=7&q=";
+  "https://api.weatherapi.com/v1/forecast.json?key=1264af36d4f441d0b7e114002242006&days=7&q=";
 const search =
-  "http://api.weatherapi.com/v1/search.json?key=1264af36d4f441d0b7e114002242006&q=";
+  "https://api.weatherapi.com/v1/search.json?key=1264af36d4f441d0b7e114002242006&q=";
 
 export async function getCurrent(location) {
   let url = current + location;
