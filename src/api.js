@@ -7,7 +7,7 @@ const search =
 
 export async function getCurrent(location) {
   let url = current + location;
-  const response = await fetch(url);
+  const response = await fetch(url,{mode: 'cors'});
   const weatherData = await response.json();
   let weatherObj = {
     localDate: new Date(weatherData.location.localtime).toDateString(),
@@ -24,7 +24,7 @@ export async function getCurrent(location) {
 
 export async function getForecast(location) {
   let url = forecast + location;
-  const response = await fetch(url);
+  const response = await fetch(url,{mode: 'cors'});
   const weatherData = await response.json();
   const currentHour = new Date().getHours();
   // eslint-disable-next-line no-unused-vars
@@ -61,7 +61,7 @@ export async function getForecast(location) {
 
 export async function getSearch(location) {
   let url = search + location;
-  const response = await fetch(url);
+  const response = await fetch(url,{mode: 'cors'});
   const weatherData = await response.json();
   let weatherObj = {
     suggestions: weatherData.map((item) => ({
