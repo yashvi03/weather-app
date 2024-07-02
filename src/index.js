@@ -12,12 +12,12 @@ import {
   degreeChange,
 } from "./dom";
 import { getCurrent } from "./api";
-import rainImage from "./rain.jpg";
-import cloudyImage from "./cloudy.jpg";
-import summerImage from "./summer.jpg";
-import snowImage from "./snow.jpg";
-import mistImage from "./mist.jpg";
-import lightRainImage from "./lightRain.jpg";
+import rainImage from "./assets/rain.jpg";
+import cloudyImage from "./assets/cloudy.jpg";
+import summerImage from "./assets/summer.jpg";
+import snowImage from "./assets/snow.jpg";
+import mistImage from "./assets/mist.jpg";
+import lightRainImage from "./assets/lightRain.jpg";
 
 import "./styles.css";
 
